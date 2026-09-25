@@ -5,7 +5,7 @@
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 This project demonstrates a complete **modern data engineering workflow** for collecting, storing, transforming, and analyzing YouTube channel data.
 
@@ -24,7 +24,7 @@ The pipeline has been tested with **500 YouTube video records**.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```text
                     ┌──────────────────────┐
@@ -69,7 +69,7 @@ The pipeline has been tested with **500 YouTube video records**.
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 | Category                 | Technology             |
 | ------------------------ | ---------------------- |
@@ -88,7 +88,7 @@ The pipeline has been tested with **500 YouTube video records**.
 
 ---
 
-## 🔄 End-to-End Pipeline
+##  End-to-End Pipeline
 
 ### 1. Data Extraction
 
@@ -154,7 +154,7 @@ This keeps **Airflow as the workflow orchestrator** while Databricks is responsi
 
 ---
 
-## ☁️ Amazon S3
+##  Amazon S3
 
 Amazon S3 acts as the cloud storage layer for the raw data.
 
@@ -169,7 +169,7 @@ This provides a persistent landing zone before the data enters the transformatio
 
 ---
 
-# 🥉 Bronze Layer
+#  Bronze Layer
 
 The Bronze layer contains the raw data after it has been loaded into Databricks.
 
@@ -191,7 +191,7 @@ The Bronze layer is designed to preserve the extracted dataset in a structured f
 
 ---
 
-# 🥈 Silver Layer
+#  Silver Layer
 
 The Silver layer contains cleaned and standardized data.
 
@@ -213,7 +213,7 @@ This layer provides a cleaner and more reliable dataset for downstream analysis.
 
 ---
 
-# 🥇 Gold Layer
+#  Gold Layer
 
 The Gold layer contains business-oriented aggregated data.
 
@@ -250,7 +250,7 @@ Example output structure:
 
 ---
 
-## 🔁 Databricks Job Integration
+##  Databricks Job Integration
 
 Databricks is configured as a separate Job rather than being manually executed from the notebook.
 
@@ -288,7 +288,7 @@ This separation gives the pipeline a clear responsibility model:
 
 ---
 
-## 📊 Data Processing Results
+##  Data Processing Results
 
 The pipeline has been validated using:
 
@@ -318,7 +318,7 @@ trigger_databricks_job     ✅
 
 ---
 
-# 📁 Project Structure
+#  Project Structure
 
 ```text
 YouTube DataBricks Pipeline/
@@ -358,7 +358,7 @@ YouTube DataBricks Pipeline/
 
 ---
 
-# ⚙️ How the Pipeline Works
+#  How the Pipeline Works
 
 ### Step 1 — Extract
 
@@ -414,7 +414,7 @@ Databricks Job
 
 ---
 
-# 🔐 Environment Variables
+#  Environment Variables
 
 The project uses environment variables for credentials and configuration.
 
@@ -434,7 +434,7 @@ DATABRICKS_HOST=<your_databricks_host>
 DATABRICKS_TOKEN=<your_databricks_token>
 ```
 
-### ⚠️ Security
+###  Security
 
 Never commit `.env` or credentials to GitHub.
 
@@ -451,7 +451,7 @@ airflow/logs/
 
 ---
 
-# 🚀 Running the Project
+#  Running the Project
 
 ## 1. Clone the Repository
 
@@ -562,7 +562,7 @@ as Delta tables.
 
 ---
 
-# 🧠 Key Data Engineering Concepts Demonstrated
+#  Key Data Engineering Concepts Demonstrated
 
 This project demonstrates practical understanding of:
 
@@ -589,7 +589,7 @@ This project demonstrates practical understanding of:
 
 ---
 
-# 🎯 Why These Technologies?
+#  Why These Technologies?
 
 ### Why Apache Airflow?
 
@@ -633,7 +633,7 @@ This makes the pipeline easier to maintain, debug, and extend.
 
 ---
 
-# 🛠️ Error Handling & Reliability
+#  Error Handling & Reliability
 
 The pipeline uses several mechanisms to improve reliability:
 
@@ -651,7 +651,7 @@ If an upstream Airflow task fails, downstream tasks are not executed until the d
 
 ---
 
-# 📈 Possible Future Improvements
+#  Possible Future Improvements
 
 The current pipeline provides the complete core workflow. Potential future improvements include:
 
@@ -669,7 +669,7 @@ The current pipeline provides the complete core workflow. Potential future impro
 
 ---
 
-# 💼 Resume Description
+#  Resume Description
 
 ### YouTube Data Engineering Pipeline
 
@@ -682,7 +682,7 @@ The current pipeline provides the complete core workflow. Potential future impro
 
 ---
 
-# 🎤 Interview Explanation
+#  Interview Explanation
 
 > "I built an end-to-end YouTube data engineering pipeline to demonstrate how a real data workflow can be automated from source ingestion to analytics.
 >
@@ -694,7 +694,7 @@ The current pipeline provides the complete core workflow. Potential future impro
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Aashi Gupta**
 

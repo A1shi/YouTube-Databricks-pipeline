@@ -1,0 +1,22 @@
+# Environment
+.env
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Data
+*.json
+*.csv
+
+# IDE
+.vscode/
+
+# Airflow local configuration
+airflow/config/
+
+# OS
+.DS_Store
+Thumbs.db
